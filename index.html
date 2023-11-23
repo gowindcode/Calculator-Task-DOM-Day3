@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <h1 id="title">calculator</h1>
+
+    <br />
+    <div id="calculator">
+      <input type="text" id="result" disabled placeholder="0" />
+      <br />
+      <button id="clear" type="submit" onclick="clearresult()">C</button>
+      <button id="percent" type="submit" onclick="appendToresult('%')">
+        %
+      </button>
+      <button id="delete" type="submit" onclick="deleteLastChar()">DEL</button>
+      <button id="division" type="submit" onclick="appendToresult('/')">
+        /
+      </button>
+      <br />
+      <button id="7" type="submit" onclick="appendToresult('7')">7</button>
+      <button id="8" type="submit" onclick="appendToresult('8')">8</button>
+      <button id="9" type="submit" onclick="appendToresult('9')">9</button>
+      <button id="multiple" type="submit" onclick="appendToresult('*')">
+        *
+      </button>
+      <br />
+      <button id="4" type="submit" onclick="appendToresult('4')">4</button>
+      <button id="5" type="submit" onclick="appendToresult('5')">5</button>
+      <button id="6" type="submit" onclick="appendToresult('6')">6</button>
+      <button id="subtract" type="submit" onclick="appendToresult('-')">
+        -
+      </button>
+      <br />
+      <button id="1" type="submit" onclick="appendToresult('1')">1</button>
+      <button id="2" type="submit" onclick="appendToresult('2')">2</button>
+      <button id="3" type="submit" onclick="appendToresult('3')">3</button>
+      <button id="add" type="submit" onclick="appendToresult('+')">+</button>
+      <br />
+      <button id="0" type="submit" onclick="appendToresult('0')">0</button>
+      <button id="and" type="submit" onclick="appendToresult('.')">.</button>
+      <button id="equal" type="submit" onclick="calculateResult()">=</button>
+    </div>
+    <br />
+    <p id="description">
+      Description: This calculator just made for task purpose, please use with
+      caution while you calculate
+    </p>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
